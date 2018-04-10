@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Шамиль Султанов](https://up.htmlacademy.ru/adaptive/14/user/461919).
-* Наставник: `Неизвестно`.
+* Наставник: [Мурат Баркинхоев] (https://htmlacademy.ru/profile/id186857).
 
 ---
 
