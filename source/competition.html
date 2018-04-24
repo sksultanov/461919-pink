@@ -13,13 +13,13 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="competition.html">Конкурс</a>
+            <a>Конкурс</a>
           </li>
           <li class="site-list__item">
             <a href="#">HTML Academy</a>
@@ -27,6 +27,90 @@
         </ul>
       </nav>
     </header>
+
+    <main class="main-competition">
+      <section class="main-competition__header">
+        <h1 class="main-competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+
+      <section class="main-forms">
+        <h2 class="main-forms__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+        <form class="main-form form" action="https://echo.htmlacademy.ru" method="POST" >
+          <fieldset class="form__appellation">
+            <legend class="visually-hidden">ФИО</legend>
+              <label class="form__surname">
+                Фамилия:
+                <input class="form__surname-input" type="text" name="surname" placeholder="Укажите фамилию *">
+              </label>
+              <label class="form__name">
+                Имя:
+                <input class="form__name-input" type="text" name="name" placeholder="Укажите ваше имя *">
+              </label>
+              <label class="form__patronymic">
+                Отчество:
+                <input class="form__patronymic-input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </label>
+          </fieldset>
+          <fieldset class="form__application">
+            <legend class="form__application-legend">С каким приложением путешествовали?</legend>
+            <label class="form__application-label">
+              <input class="form__application-input" name="application" type="radio" value="ios">
+              Pink для iOS
+            </label>
+            <label class="form__application-label">
+              <input class="form__application-input" name="application" type="radio" value="android">
+              Pink на Android
+            </label>
+            <label class="form__application-label">
+              <input class="form__application-input" name="application" type="radio" value="windows">
+              Windows Phone
+            </label>
+          </fieldset>
+          <fieldset class="form__contact">
+            <legend class="form__contact-legend">Контактная информация</legend>
+            <label class="form__contact-label" for="telephone">Номер телефона</label>
+            <input class="form__contact-input" type="text" id="telephone" name="telephone" placeholder="Номер, пожалуйста">
+            <label class="form__contact-label" for="email">Адрес почты</label>
+            <input class="form__contact-input--email" type="text" id="email" name="email" placeholder="Введите почту *">
+          </fieldset>
+          <fieldset class="form__progress">
+            <legend class="form__progress-legend">Ваши безбашенные достижения в путешествии</legend>
+            <label class="form__progress-label">
+              <input class="form__progress-input" name="shark" type="checkbox" value="shark" checked>
+              Сделал селфи с акулой
+            </label>
+            <label class="form__progress-label">
+              <input class="form__progress-input" name="beach" type="checkbox" value="beach" checked>
+              Обгорел на пляже
+            </label>
+            <label class="form__progress-label">
+              <input class="form__progress-input" name="norris" type="checkbox" value="norris">
+              Видел Чака Норриса
+            </label>
+            <label class="form__progress-label">
+              <input class="form__progress-input" name="souvenir" type="checkbox" value="souvenir">
+              Накупил сувениров
+            </label>
+            <label class="form__progress-label">
+              <input class="form__progress-input" name="turret" type="checkbox" value="turret" checked>
+              Удержал башню
+            </label>
+            <label class="form__progress-label">
+              <input class="form__progress-input" name="hotel" type="checkbox" value="hotel">
+              Разгромил отель
+            </label>
+          </fieldset>
+          <fieldset class="form__emotions">
+            <legend class="form__emotions-legend">Опишите свои эмоции</legend>
+            <textarea name="emotions" id="emotions" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
+          <button class="form__button" type="submit">Отправить форму</button>
+          <span class="form__required"><b class="form__required-red">*</b>-поля обязательные для заполнения</span>
+        </form>
+
+      </section>
+
+    </main>
     <footer class="main-footer">
       <div class="main-footer__logo">
         <a href="" class="main-footer__logo">
