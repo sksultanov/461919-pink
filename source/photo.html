@@ -45,37 +45,37 @@
         <h2 class="visually-hidden">Фотографии разных пользователей</h2>
         <ul class="photo-listing__list">
           <li class="photo-listing__list-item">
-            <img src="#" class="photo-listing__image" alt="Превое фото">
+            <a href="#"><img src="#" class="photo-listing__image" alt="Превое фото"></a>
             <span class="photo-listing__name">Левон<b class="photo-listing__time">(5 часов назад)</b></span>
             <p class="photo-listing__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <span class="photo-listing__like">Нравится 356</span>
           </li>
           <li class="photo-listing__list-item">
-            <img src="#" class="photo-listing__image" alt="Второе фото">
+            <a href="#"><img src="#" class="photo-listing__image" alt="Второе фото"></a>
             <span class="photo-listing__name">Антон<b class="photo-listing__time">(12 часов назад)</b></span>
             <p class="photo-listing__text">Соседи будут рады!</p>
             <span class="photo-listing__like">Нравится 666</span>
           </li>
           <li class="photo-listing__list-item">
-            <img src="#" class="photo-listing__image" alt="Третье фото">
+            <a href="#"><img src="#" class="photo-listing__image" alt="Третье фото"></a>
             <span class="photo-listing__name">Борис<b class="photo-listing__time">(20 часов назад)</b></span>
             <p class="photo-listing__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <span class="photo-listing__like">Нравится 356</span>
           </li>
           <li class="photo-listing__list-item">
-            <img src="#" class="photo-listing__image" alt="Четвертое фото">
+            <a href="#"><img src="#" class="photo-listing__image" alt="Четвертое фото"></a>
             <span class="photo-listing__name">Сергей<b class="photo-listing__time">(25 часов назад)</b></span>
             <p class="photo-listing__text">Самая кубанская в мире!</p>
             <span class="photo-listing__like">Нравится 4</span>
           </li>
           <li class="photo-listing__list-item">
-            <img src="#" class="photo-listing__image" alt="Пятое фото">
+            <a href="#"><img src="#" class="photo-listing__image" alt="Пятое фото"></a>
             <span class="photo-listing__name">Максим<b class="photo-listing__time">(40 часов назад)</b></span>
             <p class="photo-listing__text">Где снег-то?</p>
             <span class="photo-listing__like">Нравится 150</span>
           </li>
           <li class="photo-listing__list-item">
-            <img src="#" class="photo-listing__image" alt="Шестое фото">
+            <a href="#"><img src="#" class="photo-listing__image" alt="Шестое фото"></a>
             <span class="photo-listing__name">Надежда<b class="photo-listing__time">(45 часов назад)</b></span>
             <p class="photo-listing__text">Всем GM и взаимные лайки!</p>
             <span class="photo-listing__like">Нравится 2563</span>
@@ -86,14 +86,37 @@
       <section class="post">
         <h2 class="post__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
         <div class="post__wrap">
-          <img src="#" alt="Пост">
-          <button class="post__button-upload" type="button">Запостить</button>
-          <button class="post__button-reset" type="button">Отмена</button>
+          <form class="post__form" action="https://echo.htmlacademy.ru" method="POST"></form>
+            <fieldset class="post__fieldset">
+              <legend class="post__legend"></legend>
+              <img class="post__form-image" src="#" alt="Пост">
+              <button class="post__button-cut" type="button"><span class="visually-hidden">Обрезать</span></button>
+              <button  class="post__button-fill" type="button"><span class="visually-hidden">Залить</span></button>
+              <button class="post__button-brightness" type="button"><span class="visually-hidden">Яркость</span></button>
+              <div class="post__range-controls">
+                <div class="post__scale">
+                  <div class="post__bar"></div>
+                </div>
+                <div class="post__range-toggle"></div>
+              </div>
+              <div class="post__range-controls post__range-controls--desktop">
+                <div class="post__scale">
+                  <div class="post__bar"></div>
+                </div>
+                <div class="post__range-toggle"></div>
+              </div>
+              <div class="post__range-controls post__range-controls--desktop">
+                <div class="post__scale">
+                  <div class="post__bar"></div>
+                </div>
+                <div class="post__range-toggle"></div>
+              </div>
+              <button class="post__button-upload" type="submit">Запостить</button>
+              <button class="post__button-reset" type="reset">Отмена</button>
+            </fieldset>
         </div>
       </section>
-
     </main>
-
     <footer class="main-footer">
       <div class="main-footer__logo">
         <a href="" class="main-footer__logo">
@@ -114,4 +137,3 @@
     </footer>
   </body>
 </html>
-
