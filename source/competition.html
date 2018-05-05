@@ -53,64 +53,64 @@
                   <input class="form__name-input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
                 </label>
             </fieldset>
-            <div class="form__wraper">
-              <fieldset class="form__application">
-                <legend class="form__application-legend">С каким приложением путешествовали?</legend>
-                <label class="form__application-label">
-                  <input class="form__application-input" name="application" type="radio" value="ios">
-                  Pink для iOS
-                </label>
-                <label class="form__application-label">
-                  <input class="form__application-input" name="application" type="radio" value="android">
-                  Pink на Android
-                </label>
-                <label class="form__application-label">
-                  <input class="form__application-input" name="application" type="radio" value="windows">
-                  Windows Phone
-                </label>
-              </fieldset>
-              <fieldset class="form__contact">
-                <legend class="form__contact-legend form__contact-legend--mobile">Контактная информация</legend>
-                <label class="form__contact-label" for="telephone">Номер телефона</label>
-                <input class="form__contact-input" type="tel" id="telephone" name="telephone" placeholder="Номер, пожалуйста">
-                <label class="form__contact-label" for="email">Адрес почты</label>
-                <input class=" form__contact-input form__contact-input--email" type="email" id="email" name="email" placeholder="Введите почту *" required>
-              </fieldset>
-              <fieldset class="form__progress">
-                <legend class="form__progress-legend">Ваши безбашенные достижения в путешествии</legend>
-                <label class="form__progress-label">
-                  <input class="form__progress-input" name="shark" type="checkbox" value="shark" checked>
-                  Сделал селфи с акулой
-                </label>
-                <label class="form__progress-label">
-                  <input class="form__progress-input" name="beach" type="checkbox" value="beach" checked>
-                  Обгорел на пляже
-                </label>
-                <label class="form__progress-label">
-                  <input class="form__progress-input" name="norris" type="checkbox" value="norris">
-                  Видел Чака Норриса
-                </label>
-                <label class="form__progress-label">
-                  <input class="form__progress-input" name="souvenir" type="checkbox" value="souvenir">
-                  Накупил сувениров
-                </label>
-                <label class="form__progress-label">
-                  <input class="form__progress-input" name="turret" type="checkbox" value="turret" checked>
-                  Удержал башню
-                </label>
-                <label class="form__progress-label">
-                  <input class="form__progress-input" name="hotel" type="checkbox" value="hotel">
-                  Разгромил отель
-                </label>
-              </fieldset>
-            </div>
+            <fieldset class="form__application">
+              <legend class="form__application-legend">С каким приложением путешествовали?</legend>
+              <label class="form__application-label">
+                <input class="form__application-input" name="application" type="radio" value="ios">
+                Pink для iOS
+              </label>
+              <label class="form__application-label">
+                <input class="form__application-input" name="application" type="radio" value="android">
+                Pink на Android
+              </label>
+              <label class="form__application-label">
+                <input class="form__application-input" name="application" type="radio" value="windows">
+                Windows Phone
+              </label>
+            </fieldset>
+            <fieldset class="form__contact">
+              <legend class="form__contact-legend form__contact-legend--mobile">Контактная информация</legend>
+              <label class="form__contact-label" for="telephone">Номер телефона</label>
+              <input class="form__contact-input" type="tel" id="telephone" name="telephone" placeholder="Номер, пожалуйста">
+              <label class="form__contact-label" for="email">Адрес почты</label>
+              <input class=" form__contact-input form__contact-input--email" type="email" id="email" name="email" placeholder="Введите почту *" required>
+            </fieldset>
+            <fieldset class="form__progress">
+              <legend class="form__progress-legend">Ваши безбашенные достижения в путешествии</legend>
+              <label class="form__progress-label">
+                <input class="form__progress-input" name="shark" type="checkbox" value="shark" checked>
+                Сделал селфи с акулой
+              </label>
+              <label class="form__progress-label">
+                <input class="form__progress-input" name="beach" type="checkbox" value="beach" checked>
+                Обгорел на пляже
+              </label>
+              <label class="form__progress-label">
+                <input class="form__progress-input" name="norris" type="checkbox" value="norris">
+                Видел Чака Норриса
+              </label>
+              <label class="form__progress-label">
+                <input class="form__progress-input" name="souvenir" type="checkbox" value="souvenir">
+                Накупил сувениров
+              </label>
+              <label class="form__progress-label">
+                <input class="form__progress-input" name="turret" type="checkbox" value="turret" checked>
+                Удержал башню
+              </label>
+              <label class="form__progress-label">
+                <input class="form__progress-input" name="hotel" type="checkbox" value="hotel">
+                Разгромил отель
+              </label>
+            </fieldset>
             <fieldset class="form__emotions">
               <legend class="form__emotions-legend">Опишите свои эмоции</legend>
               <textarea class="form__emotions-area" name="emotions" id="emotions" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
-            <button class="form__button" type="submit">Отправить форму</button>
-            <span class="form__required-desktop"><b class="form__required-red">*</b>-поля обязательные для заполнения</span>
-            <span class="form__required"><b class="form__required-red">*</b>-обязательные поля</span>
+            <div class="form__button-block">
+              <button class="form__button" type="submit">Отправить форму</button>
+              <span class="form__required-desktop"><b class="form__required-red">*</b>-поля обязательные для заполнения</span>
+              <span class="form__required"><b class="form__required-red">*</b>-обязательные поля</span>
+            </div>
           </form>
         </section>
       </main>
