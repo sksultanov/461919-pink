@@ -4,13 +4,19 @@
   background-color: #ffffff;
 }
 
-.reviews__name-top {
+.reviews__name-top,
+.reviews__name-bottom {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
 }
 
+.reviews__name-prof {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
 .reviews__text {
   line-height: 30px;
 }
@@ -21,4 +27,18 @@
 
 .reviews__name-prof {
   display: none;
+}
+
+@media (min-width:@tablet-width) {
+  .reviews__name-top {
+    display: none;
+  }
+
+  .reviews__name-bottom {
+    display: block;
+  }
+
+  .reviews__name-prof {
+    display: block;
+  }
 }
