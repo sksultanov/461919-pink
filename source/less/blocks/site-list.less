@@ -48,4 +48,21 @@
   .site-list__item:nth-child(4n+1) {
     margin-left: 0;
   }
+  .site-list__item {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+
+        height: 3px;
+
+        background: #ffffff;
+      }
+    }
+  }
 }
