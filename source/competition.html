@@ -8,25 +8,37 @@
   <body>
     <div class="form-container">
       <header class="page-header">
-        <a href="" class="page-header__logo">
-          <img class="page-header__logo-image" src="#" width="30" height="30" alt="Логотип Пинк">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html" class="site-list__item-link" >Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html" class="site-list__item-link">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__item-link">HTML Academy</a>
-            </li>
-          </ul>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__logo-wrapper">
+              <a href="#" class="main-nav__logo">
+                <svg class="main-nav__logo-path1"  width="75" height="23" fill="#FFFFFF">
+                    <use xlink:href="img/logo-sprite.svg#logo-mobile"></use>
+                </svg>
+                <svg class="main-nav__logo-path2" width="147" height="41" fill="#FFFFFF">
+                    <use xlink:href="img/logo-sprite.svg#logo-tablet"></use>
+                </svg>
+                <svg class="main-nav__logo-path3" width="147" height="41" fill="#FFFFFF">
+                    <use xlink:href="img/logo-sprite.svg#logo-desktop"></use>
+                </svg>
+              </a>
+              <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            </div>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html" class="site-list__item-link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html" class="site-list__item-link">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#" class="site-list__item-link">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#" class="site-list__item-link">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
 
@@ -133,5 +145,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/menu.js"></script>
   </body>
 </html>
