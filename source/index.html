@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -60,23 +61,50 @@
 
         <section class="information">
           <div class="information__slogan">
-            <h2 class="information__slogan-title">Устали от серости мегаполиса? Нам есть, что вам  предложить!</h2>
+            <h2 class="information__slogan-title"><b class="information__slogan-title-top" >Устали от серости мегаполиса?</b> <b class="information__slogan-title-bottom">Нам есть, что вам  предложить!</b></h2>
           </div>
-          <div class="information__list-block">
-            <ul class="information__list features-list">
-              <li class="features-list__item">
-                <h3 class="features-list__slogan">Поднимает настроение</h3>
-                <p class="features-list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              </li>
-              <li class="features-list__item">
-                <h3 class="features-list__slogan">Меняет мир вокруг</h3>
-                <p class="features-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-              </li>
-              <li class="features-list__item">
-                <h3 class="features-list__slogan">Заводит новых друзей</h3>
-                <p class="features-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </li>
-            </ul>
+          <div class="information__wrapper">
+            <div class="information__images">
+              <ul class="information__images-list">
+                <li class="information__images-item">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
+                    <img class="information__images-img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iphone скрин1">
+                  </picture>
+                </li>
+                <li class="information__images-item">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
+                    <img class="information__images-img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iphone скрин2">
+                  </picture>
+                </li>
+                <li class="information__images-item">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                    <img class="information__images-img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iphone скрин3">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <div class="information__list-block">
+              <ul class="information__list features-list">
+                <li class="features-list__item">
+                  <h3 class="features-list__slogan">Поднимает настроение</h3>
+                  <p class="features-list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="features-list__item">
+                  <h3 class="features-list__slogan">Меняет мир вокруг</h3>
+                  <p class="features-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br class="features-list__description-br"> усилить эффект</p>
+                </li>
+                <li class="features-list__item">
+                  <h3 class="features-list__slogan">Заводит новых друзей</h3>
+                  <p class="features-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="information__effect">
             <h3 class="information__effect-slogan">Эффект на 24 часа!</h3>
@@ -92,9 +120,6 @@
               <span class="reviews__name-prof">25 лет, водитель трамвая</span>
             </cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <cite class="reviews__name-bottom">Николай Петров
-              <span class="reviews__name-prof">25 лет, водитель трамвая</span>
-            </cite>
           </blockquote>
         </section>
 

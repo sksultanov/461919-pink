@@ -1,20 +1,52 @@
 .information__slogan {
+  width: 320px;
   min-height: 248px;
 
   background: #ffffff;
 }
-
 .information__slogan-title {
+  margin-top: 37px;
+}
+
+.information__slogan-title-top,
+.information__slogan-title-bottom {
+  display: block;
   margin: 0;
-  padding-top: 50px;
 
   font-weight: 300;
-  font-size: 27px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+.information__slogan-title-bottom {
+  margin-top: 23px;
 }
 
-.information__list {
+.information__list,
+.information__images-list {
   .list-clear();
 }
+
+.information__images-item:nth-child(1),
+.information__images-item:nth-child(2) {
+  display: none;
+}
+.information__images-item:nth-child(3) {
+  height: 277px;
+  overflow: hidden;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
 
 .features-list__slogan {
   font-weight: 700;
@@ -26,11 +58,13 @@
 }
 
 .information__list-block {
-  min-height: 755px;
+  margin-top: -74px;
+  padding: 26px 30px;
+  padding-top: 123px;
 
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 110%;
+  text-align: center;
+
+  background-image: url("../img/Shape2@1x.png");
 }
 
 .information__effect {
@@ -40,5 +74,73 @@
 @media (min-width:@tablet-width) {
   .information__effect {
     display: block;
+  }
+
+  .information__images-item:nth-child(3) {
+    height: 481px;
+    overflow: visible;
+  }
+  .information__slogan {
+    width: 620px;
+    padding: 0 20px;
+    padding-top: 13px;
+  }
+  .information__slogan-title-top,
+  .information__slogan-title-bottom {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .information__slogan-title-bottom {
+    margin-top: 7px;
+    padding: 0 40px;
+  }
+  .information__list-block {
+    background-image: none;
+  }
+  .information__wrapper {
+    flex-direction: row;
+    width: 660px;
+    margin-top: -19px;
+
+    background-color: #ffffff;
+    background-image: url("../img/Shape2@2x.png");
+    background-position: 0 -25px;
+  }
+  .information__images {
+    padding-left: 20px;
+  }
+
+  .information__list-block {
+    width: 310px;
+    margin-left: 41px;
+    padding-top: 120px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+
+    text-align: start;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .information__slogan {
+    width: 1160px;
+  }
+
+  .information__wrapper {
+    flex-wrap: wrap;
+    align-content: center;
+    width: 1200px;
+  }
+  .information__list-block {
+    width: auto;
+  }
+  .information__images-item:nth-child(1),
+  .information__images-item:nth-child(2) {
+    display: block;
+  }
+  .information__images-list {
+    display: flex;
+    flex-grow: 2;
   }
 }

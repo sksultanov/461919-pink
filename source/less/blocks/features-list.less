@@ -1,3 +1,27 @@
+.features-list__slogan {
+  margin: 0;
+}
+.features-list__item:nth-child(2) {
+  margin-top: 30px;
+}
+
+.features-list__item:nth-child(3) {
+  margin-top: 28px;
+}
+.features-list__description-br {
+  display: none;
+}
+
+@media (min-width:@tablet-width) {
+  .features-list__description-br {
+    display: inline;
+  }
+
+  .features-list__item:nth-child(2) {
+    margin-top: 33px;
+  }
+}
+
 @media (min-width:@desktop-width) {
   .features-list {
     display: flex;
