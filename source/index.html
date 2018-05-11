@@ -117,12 +117,22 @@
 
         <section class="reviews">
           <h2 class="visually-hidden">Отзывы о нас</h2>
-          <blockquote class="reviews__item">
-            <cite class="reviews__name-top">Николай Петров
-              <span class="reviews__name-prof">25 лет, водитель трамвая</span>
-            </cite>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
+          <div class="reviews__wrapper">
+            <blockquote class="reviews__item">
+              <cite class="reviews__name">Николай Петров
+                <span class="reviews__name-prof">25 лет, водитель трамвая</span>
+              </cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+            <div class="reviews__slider">
+              <input class="reviews__slider-button1" type="radio" name="slider" id="button1" checked >
+              <input class="reviews__slider-button2" type="radio" name="slider" id="button2">
+              <input class="reviews__slider-button3" type="radio" name="slider" id="button3">
+              <label class="reviews__slider-label1" id="hw1" for="button1"></label>
+              <label class="reviews__slider-label2" id="hw2" for="button2"></label>
+              <label class="reviews__slider-label3" id="hw3" for="button3"></label>
+            </div>
+          </div>
         </section>
 
         <section class="price">
