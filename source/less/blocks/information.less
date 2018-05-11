@@ -120,27 +120,137 @@
 
     text-align: start;
   }
+
+  .information__effect {
+    display: flex;
+    justify-content: flex-end;
+    width: 660px;
+
+    background-color: #ffffff;
+    background-image: url("../img/timer.png");
+    background-repeat: no-repeat;
+    background-position: 20px 60px;
+    background-size: 240px 276px;
+  }
+
+  .information__effect-wrapper {
+    width: 331px;
+    margin-top: 69px;
+
+    text-align: start;
+  }
+
+  .information__effect-slogan {
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+  }
+
+  .information__effect-description {
+    width: 305px;
+    margin-top: -21px;
+    margin-bottom: 11px;
+  }
+
+  .information__effect-link {
+    display: block;
+    padding-bottom: 55px;
+
+    color: #d22856;
+  }
+  .information__effect-description-br1 {
+    display: none;
+  }
 }
 
 @media (min-width:@desktop-width) {
+  .information {
+    background-color: #ffffff;
+  }
   .information__slogan {
     width: 1160px;
   }
+  .information__slogan-title {
+    margin-top: 58px;
+  }
 
+  .information__slogan-title-top,
+  .information__slogan-title-bottom {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .information__slogan-title-bottom {
+    padding: 0 218px;
+  }
   .information__wrapper {
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
     width: 1200px;
+    margin-top: 62px;
+
+    background-color: #ffffff;
+    background-image: url("../img/Shape2@3x.png");
+    background-position: 0 -6px;
   }
   .information__list-block {
-    width: auto;
+    width: 880px;
+    margin: 0;
+    margin-top: 55px;
+    padding: 0;
+
+    text-align: center;
   }
   .information__images-item:nth-child(1),
-  .information__images-item:nth-child(2) {
+  .information__images-item:nth-child(2),
+  .information__images-item:nth-child(3) {
     display: block;
+    height: 302px;
+  }
+
+
+  .information__images {
+    width: 934px;
+    padding: 0;
   }
   .information__images-list {
     display: flex;
-    flex-grow: 2;
+    justify-content: space-between;
+  }
+
+  .information__effect {
+    width: 1200px;
+
+    background-position: 131px 48px;
+    background-size: auto;
+  }
+
+  .information__effect-wrapper {
+    width: 704px;
+    margin-top: 109px;
+  }
+
+  .information__effect-description-br1 {
+    display: inline;
+  }
+
+  .information__effect-slogan-br,
+  .information__effect-description-br2,
+  .information__effect-description-br3 {
+    display: none;
+  }
+
+  .information__effect-description {
+    width: 589px;
+    margin-top: -8px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .information__effect-link {
+    margin-top: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
   }
 }

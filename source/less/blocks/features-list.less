@@ -1,5 +1,7 @@
 .features-list__slogan {
   margin: 0;
+
+  color: black;
 }
 .features-list__item:nth-child(2) {
   margin-top: 30px;
@@ -25,5 +27,33 @@
 @media (min-width:@desktop-width) {
   .features-list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .features-list__item {
+    width: 240px;
+  }
+
+  .features-list__item:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .features-list__item:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .features-list__slogan {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .features-list__description {
+    margin-top: 24px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .features-list__description-br {
+    display: none;
   }
 }
