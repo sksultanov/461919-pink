@@ -118,16 +118,20 @@
         <section class="reviews">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <div class="reviews__wrapper">
-            <blockquote class="reviews__item">
-              <cite class="reviews__name">Николай Петров
-                <span class="reviews__name-prof">25 лет, водитель трамвая</span>
-              </cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
+            <div class="reviews__item-wrapper">
+              <button class="reviews__item-button" type="button"><span class="visually-hidden">Назад</span><span class="reviews__item-button-ff"></span></button>
+              <blockquote class="reviews__item">
+                <cite class="reviews__name">Николай Петров
+                  <span class="reviews__name-prof">25 лет, водитель трамвая</span>
+                </cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+              <button class="reviews__item-button" type="button"><span class="visually-hidden">Вперед</span><span class="reviews__item-button-rew"></span></button>
+            </div>
             <div class="reviews__slider">
-              <input class="reviews__slider-button1" type="radio" name="slider" id="button1" checked >
-              <input class="reviews__slider-button2" type="radio" name="slider" id="button2">
-              <input class="reviews__slider-button3" type="radio" name="slider" id="button3">
+              <input class="visually-hidden" type="radio" name="slider" id="button1" checked >
+              <input class="visually-hidden" type="radio" name="slider" id="button2">
+              <input class="visually-hidden" type="radio" name="slider" id="button3">
               <label class="reviews__slider-label1" id="hw1" for="button1"></label>
               <label class="reviews__slider-label2" id="hw2" for="button2"></label>
               <label class="reviews__slider-label3" id="hw3" for="button3"></label>
@@ -137,32 +141,40 @@
 
         <section class="price">
           <h2 class="visually-hidden">Прайс лист</h2>
-          <table class="price__table">
-            <tr class="price__table-line cost-table">
-              <th class="cost-table__cell cost-table__cell--inviz"></th>
-              <th class="cost-table__cell"><b class="cost-table__text">База</b><br><span class="cost-table__cost">1,99 USD</span></th>
-              <th class="cost-table__cell cost-table__cell--hit"><b class="cost-table__text">Стандарт</b><br><span class="cost-table__cost">3,99 USD</span></th>
-              <th class="cost-table__cell"><b class="cost-table__text">Анлим</b><br><span class="cost-table__cost">9,99 USD</span></th>
+          <input class="visually-hidden" type="radio" name="price-slider" id="button4">
+          <input class="visually-hidden" type="radio" name="price-slider" id="button5" checked>
+          <input class="visually-hidden" type="radio" name="price-slider" id="button6">
+          <table class="price__table cost-table">
+            <tr class="cost-table__line-head">
+              <th class="cost-table__none cost-table__none--inviz"></th>
+              <th class="cost-table__left"><div class="cost-table__box"><b class="cost-table__text">База</b><br><span class="cost-table__cost">1,99 USD</span></div></th>
+              <th class="cost-table__center cost-table__center--hit"><div class="cost-table__box"><b class="cost-table__text">Стандарт</b><br><span class="cost-table__cost">3,99 USD</span></div></th>
+              <th class="cost-table__right"><div class="cost-table__box"><b class="cost-table__text">Анлим</b><br><span class="cost-table__cost">9,99 USD</span></div></th>
             </tr>
-            <tr class="price__table-line cost-table">
-              <td class="cost-table__type">Розовый фильтр</td>
-              <td class="cost-table__check"></td>
-              <td class="cost-table__check"></td>
-              <td class="cost-table__check"></td>
+            <tr class="cost-table__line">
+              <td class="cost-table__none"><div class="cost-table__box"><span class="cost-table__content">Розовый фильтр</span></div></td>
+              <td class="cost-table__left"><div class="cost-table__box"><span class="cost-table__slot">Розовый фильтр</span><span class="cost-table__slot-selected"></span></div></td>
+              <td class="cost-table__center"><div class="cost-table__box"><span class="cost-table__slot">Розовый фильтр</span><span class="cost-table__slot-selected"></span></div></td>
+              <td class="cost-table__right"><div class="cost-table__box"><span class="cost-table__slot">Розовый фильтр</span><span class="cost-table__slot-selected"></span></div></td>
             </tr>
-            <tr class="price__table-line cost-table">
-              <td class="cost-table__type">Смайлики</td>
-              <td class="cost-table__check"></td>
-              <td class="cost-table__check"></td>
-              <td class="cost-table__check"></td>
+            <tr class="cost-table__line">
+              <td class="cost-table__none"><div class="cost-table__box"><span class="cost-table__content">Смайлики</span></div></td>
+              <td class="cost-table__left"><div class="cost-table__box"><span class="cost-table__slot">Смайлики</span><span class="cost-table__slot-no-selected"></span></div></td>
+              <td class="cost-table__center"><div class="cost-table__box"><span class="cost-table__slot">Смайлики</span><span class="cost-table__slot-selected"></span></div></td>
+              <td class="cost-table__right"><div class="cost-table__box"><span class="cost-table__slot">Смайлики</span><span class="cost-table__slot-selected"></span></div></td>
             </tr>
-            <tr class="price__table-line cost-table">
-              <td class="cost-table__type">Комментарии</td>
-              <td class="cost-table__check"></td>
-              <td class="cost-table__check"></td>
-              <td class="cost-table__check"></td>
+            <tr class="cost-table__line">
+              <td class="cost-table__none"><div class="cost-table__box"><span class="cost-table__content">Комментарий</span></div></td>
+              <td class="cost-table__left"><div class="cost-table__box"><span class="cost-table__slot">Комментарий</span><span class="cost-table__slot-no-selected"></span></div></td>
+              <td class="cost-table__center"><div class="cost-table__box"><span class="cost-table__slot">Комментарий</span><span class="cost-table__slot-no-selected"></span></div></td>
+              <td class="cost-table__right"><div class="cost-table__box"><span class="cost-table__slot">Комментарий</span><span class="cost-table__slot-selected"></span></div></td>
             </tr>
           </table>
+
+              <label class="price__slider-label4" id="hw1" for="button4"></label>
+              <label class="price__slider-label5" id="hw2" for="button5"></label>
+              <label class="price__slider-label6" id="hw3" for="button6"></label>
+
         </section>
 
         <section class="questions">

@@ -1,6 +1,7 @@
 .cost-table__text {
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .cost-table__cost {
@@ -8,13 +9,98 @@
   font-size: 24px;
   line-height: 30px;
 }
+.cost-table__content,
+.cost-table__slot {
+  display: inline-block;
+  width: 150px;
+  margin-left: 35px;
 
-.cost-table__type {
+  font-weight: 400;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
-.cost-table__cell {
+.cost-table__line-head {
+  height: 98px;
+
   color: #ffffff;
 
   background-color: #283645;
+}
+
+.cost-table {
+  width: 100%;
+  padding-top: 107px;
+
+  border-color: #e5e5e5;
+}
+
+.cost-table__line {
+  height: 58px;
+
+  background-color: #ffffff;
+}
+
+.cost-table__slot-selected {
+  display: inline-block;
+}
+
+.cost-table__slot-selected,
+.cost-table__slot-no-selected {
+  position: relative;
+}
+
+.cost-table__slot-selected::before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 60px;
+
+  width: 27px;
+  height: 27px;
+
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 27px;
+}
+
+.cost-table__slot-no-selected::before {
+  content: "";
+  position: absolute;
+  left: 60px;
+
+  width: 27px;
+  height: 27px;
+
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+@media (max-width: @only-mobile) {
+  .cost-table__none {
+    display: none;
+  }
+  .cost-table__left .cost-table__box,
+  .cost-table__center .cost-table__box,
+  .cost-table__right .cost-table__box,
+  .cost-table__none .cost-table__box {
+    display: none;
+  }
+  #button5:checked ~ .price__table .cost-table__center .cost-table__box {
+    display: block;
+  }
+  #button4:checked ~ .price__table .cost-table__left .cost-table__box {
+    display: block;
+  }
+  #button4:checked ~ .price__table .cost-table__right {
+    display: none;
+  }
+  #button6:checked ~ .price__table .cost-table__right .cost-table__box {
+    display: block;
+  }
+  #button6:checked ~ .price__table .cost-table__left {
+    display: none;
+  }
 }
