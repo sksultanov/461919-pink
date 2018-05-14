@@ -30,7 +30,7 @@
 
 .cost-table {
   width: 100%;
-  margin-top: 131px;
+  margin-top: 89px;
   margin-bottom: 37px;
 
   border-collapse: collapse;
@@ -142,6 +142,7 @@
 @media (min-width: @tablet-width) {
   .cost-table {
     width: 620px;
+    margin-top: 77px;
     margin-right: 20px;
     margin-left: 20px;
   }
@@ -157,12 +158,89 @@
   }
 
   .cost-table:before {
-    top: -133px;
+    top: -107px;
+    left: -22px;
 
-    height: 45px;
+    width: @tablet-width;
+    height: 50px;
   }
 
   .cost-table__cost {
     font-size: 18px;
+  }
+
+  .cost-table__text {
+    font-size: 16px;
+  }
+
+  .cost-table__content {
+    text-transform: none;
+  }
+
+  .cost-table__left,
+  .cost-table__center,
+  .cost-table__right,
+  .cost-table__none {
+    width: 155px;
+  }
+
+  .cost-table__line-head {
+    height: 80px;
+  }
+
+  .cost-table__line {
+    height: 46px;
+  }
+
+  .cost-table__content {
+    display: inline;
+    margin-left: 14px;
+  }
+
+  .cost-table__slot-no-selected::before {
+    top: -15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cost-table {
+    width: 940px;
+    margin-top: 139px;
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+
+  .cost-table:before {
+    top: -192px;
+    left: -133px;
+
+    width: 1202px;
+    height: 96px;
+  }
+  .cost-table__text {
+    font-size: 18px;
+  }
+  .cost-table__content {
+    margin-left: 21px;
+
+    font-size: 18px;
+  }
+
+  .cost-table__cost {
+    font-size: 24px;
+  }
+
+  .cost-table__line-head {
+    height: 98px;
+  }
+
+  .cost-table__line {
+    height: 61px;
+  }
+
+  .cost-table__slot-selected::before,
+  .cost-table__slot-no-selected::before {
+    top: -15px;
+    left: 104px;
   }
 }
